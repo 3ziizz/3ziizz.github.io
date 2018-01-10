@@ -1,0 +1,71 @@
+div
+{   
+    margin: auto;
+    width: 50%;
+    height:100%;
+    background: rgb(215, 250, 252)
+}
+h7
+{
+    position: fixed;
+    left:610px;
+    top:2%;
+    color: rgb(4, 103, 121)
+    
+}
+h8
+{
+    position: fixed;
+    left:350px;
+    top:4%;
+    color: rgb(4, 103, 121)
+    
+}
+h9
+{
+    position: fixed;
+    left:350px;
+    top:1%;
+    color: rgb(4, 103, 121)
+    
+}
+#first-heart
+{
+    position: fixed;
+    right:600px;
+    top:6%;
+    width:4%;
+    height:4%;
+
+}
+#second-heart
+{
+    position: fixed;
+    right:650;
+    top:6%;
+    width:4%;
+    height:4%;
+
+}
+#third-heart
+{
+    position: fixed;
+    right:700;
+    top:6%;
+    width:4%;
+    height:4%;
+}
+#volume
+{   position: relative;
+    left: 600px;
+    width:10%;
+    height:10%;
+}
+#ball
+{ 
+    left: 600px;
+    width:10%;
+    height:10%;
+    background-color: #ffffff;
+}
+
