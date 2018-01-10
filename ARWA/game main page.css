@@ -1,13 +1,13 @@
 #main
 {   
-    background:"grass.jpeg";
+   
     margin: auto;
-    width: 50%;
+    width: 60%;
     height:100%;
     background: rgb(255, 255, 255)
 }
-h2
-{
+#score
+{ 
     position: absolute;
     left:610px;
     top:0%;
@@ -17,7 +17,7 @@ h2
 #level
 {
     position: absolute;
-    left:360px;
+    left:22%;
     top:3.5%;
     color: rgb(56, 5, 197)
     
@@ -25,7 +25,7 @@ h2
 #badge
 {
     position: absolute;
-    left:360px;
+    left:22%;
     top:0%;
     color: rgb(56, 5, 197)
     
@@ -64,7 +64,7 @@ h2
 #volume-btn
 {
     position: absolute;
-    left: 950px;
+    left: 74%;
     top:4%;
 }  
 
@@ -78,8 +78,8 @@ height: 12%;
     mix-blend-mode: multiply;
     position: absolute;
     right:580;
-    bottom:0%;
+    bottom:1%;
     width:240px;
-    height:150px;
+    height:130px;
 }
 
