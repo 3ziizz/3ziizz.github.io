@@ -1,28 +1,16 @@
 #main
 {   
-<<<<<<< HEAD
-    background:"grass.jpeg";
-    margin: auto;
-    width: 50%;
-    height:100%;
-    background: rgb(255, 255, 255)
-=======
     background-image: url("grass.jpeg");
     margin: auto;
     width: 50%;
     height:100%;
->>>>>>> Nady
 }
 h2
 {
     position: absolute;
     left:610px;
     top:0%;
-<<<<<<< HEAD
-    color: rgb(56, 5, 197)
-=======
     color: rgb(242, 246, 0)
->>>>>>> Nady
     
 }
 #level
@@ -30,11 +18,7 @@ h2
     position: absolute;
     left:360px;
     top:3.5%;
-<<<<<<< HEAD
-    color: rgb(56, 5, 197)
-=======
     color: rgb(207, 253, 0)
->>>>>>> Nady
     
 }
 #badge
@@ -42,11 +26,7 @@ h2
     position: absolute;
     left:360px;
     top:0%;
-<<<<<<< HEAD
-    color: rgb(56, 5, 197)
-=======
     color: rgb(7, 237, 253)
->>>>>>> Nady
     
 }
 #first-heart
@@ -54,11 +34,7 @@ h2
     mix-blend-mode: multiply;
     position: absolute;
     right:650px;
-<<<<<<< HEAD
-    top:7%;
-=======
     top:8%;
->>>>>>> Nady
     width:2.5%;
     height:2.5%;
 
@@ -68,11 +44,7 @@ h2
     mix-blend-mode: multiply;
     position: absolute;
     right:685;
-<<<<<<< HEAD
-    top:7%;
-=======
     top:8%;
->>>>>>> Nady
     width:2.5%;
     height:2.5%;
 
@@ -83,11 +55,7 @@ h2
     mix-blend-mode: multiply;
     position: absolute;
     right:720;
-<<<<<<< HEAD
-    top:7%;
-=======
     top:8%;
->>>>>>> Nady
     width:2.5%;
     height:2.5%;
 }
