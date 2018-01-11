@@ -1,0 +1,90 @@
+#main
+{   
+    
+    margin: auto;
+    width: 60%;
+    height:100%;
+    background: rgb(243, 239, 239);
+    opacity:1;
+
+}
+#score
+{ 
+    position: absolute;
+    left:45%;
+    top:0%;
+    color: rgb(56, 5, 197)
+
+    
+}
+#level
+{
+    position: absolute;
+    left:22%;
+    top:3.5%;
+    color: rgb(56, 5, 197)
+
+    
+}
+#badge
+{
+    position: absolute;
+    left:22%;
+    top:0%;
+    color: rgb(56, 5, 197)
+
+    
+}
+#first-heart
+{   
+    mix-blend-mode: multiply;
+    position: absolute;
+    right:650px;
+    top:7%;
+    width:2.5%;
+    height:2.5%;
+
+}
+#second-heart
+{   
+    mix-blend-mode: multiply;
+    position: absolute;
+    right:685;
+    top:7%;
+    width:2.5%;
+    height:2.5%;
+
+
+}
+#third-heart
+{   
+    mix-blend-mode: multiply;
+    position: absolute;
+    right:720;
+    top:7%;
+    width:2.5%;
+    height:2.5%;
+}
+
+#volume-btn
+{
+    position: absolute;
+    left:74%;
+    top:4%;
+}  
+
+#ball
+{
+width: 12%;
+height: 12%;
+}
+#box
+{   
+    mix-blend-mode: multiply;
+    position: absolute;
+    right:39%;
+    bottom:1%;
+    width:240px;
+    height:130px;
+}
+
