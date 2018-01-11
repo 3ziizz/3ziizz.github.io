@@ -18,6 +18,15 @@
 
     
 }
+#currscore
+{ 
+    position: absolute;
+    left:45%;
+    top:7%;
+    color: rgb(166, 255, 0)
+
+    
+}
 #level
 {
     position: absolute;
