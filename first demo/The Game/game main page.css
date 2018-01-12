@@ -110,7 +110,8 @@ height: 12%;
 .balls
 {
     position: absolute;
-    top:10%; 
-    right:45%;
-    
+    top:2%; 
+    right:1030px;
+    width:4.5%;
+    height:5%;    
 }
