@@ -35,7 +35,7 @@ btn.addEventListener('click',mute);
 
 function mute() {
     document.getElementById("myaudio1").muted=!document.getElementById("myaudio1").muted ;
-}1
+}
 
 function autoplay(){
 aud.autoplay = true;
@@ -44,3 +44,13 @@ aud.load();
 }
 
 autoplay();
+
+document.addEventListener("keyup",Gostart);
+function Gostart(e)
+{
+if (e.which==27)
+{
+document.location.href = '../start_page.html' ;
+}
+
+}
