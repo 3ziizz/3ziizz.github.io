@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>THE GAME</title>
+    <link rel="stylesheet"  href="game main page.css" />
+    
+</head>
+<body background="grass.jpeg" onLoad="init();">
+    <script src="drop-ball.js"></script>
+    <div id="main"  >
+        <canvas id="myCanvas" width="500" height="500">
+        </canvas>       
+        <h2 id="score">Highest Score :</h2>
+        <h2 id="currscore">Score:</h2>
+        <h2 id="level">Level :</h2>
+        <h2 id="badge">Badge :</h2>
+        <img id="first-heart" src="live.jpg"/>
+        <img id="second-heart" src="live.jpg"/>
+        <img id="third-heart" src="live.jpg"/>
+
+        <div id="volume-btn">
+            <button type="button" style=" background-color: Transparent;border: none" >
+                    <img src="volume.png" width="40px" height="40px"/>
+            </button>
+        </div>
+        <img id="box" src="goal1.jpg"/>
+        <!MARQUEE DIRECTION=down height=100% loop=1 hspace=50%> <!img id="ball" src="bal.ico"/></MARQUEE>
+        <!img id="ball" src="bal.ico"/>
+
+    </div>
+    <div id="circle"></div>
+    
+    <script src="move-box.js"></script>
+    <script src="score.js"></script>
+    <script src="drawball.js"></script>
+</body>
+
+</html>
