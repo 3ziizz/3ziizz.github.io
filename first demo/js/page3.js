@@ -1,17 +1,28 @@
+function Sound (id, src) {
+    this.id = id;
+    this.src = src;
+    this.setsource=function(){
+document.getElementById(this.id).src = this.src;
+// audio.setAttribute('src',this.src);
 
-var aud = document.getElementById("myaudio1");
+};
+  this.mute=function() {document.getElementById(this.id).muted=!document.getElementById(this.id).muted ;};
+this.autoplay=function(){
 
-var btn=document.getElementById("mybtn");
-btn.addEventListener('click',mute);
-
-function mute() {
-    document.getElementById("myaudio1").muted=!document.getElementById("myaudio1").muted ;
-}1
-
-function autoplay(){
-aud.autoplay = true;
-aud.loop=true ;
-aud.load();
+document.getElementById(this.id).autoplay = true;
+document.getElementById(this.id).loop=true ;
+document.getElementById(this.id).load();
+};
+    
 }
 
-autoplay();
+
+
+var sound1 = new Sound("myaudio1","audio/Kalimba.mp3");
+sound1.setsource();
+sound1.autoplay();
+
+
+var btn=document.getElementById("mybtn");
+btn.addEventListener('click',function(){sound1.mute()});
+
