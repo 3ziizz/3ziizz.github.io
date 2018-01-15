@@ -16,26 +16,7 @@ document.getElementById(this.id).load();
     
 }
 
-//Sound.prototype.catchid=function(){return document.getElementById(this.id); }
 
-
-
-/*
-var aud = document.getElementById("myaudio1");
-
-var btn=document.getElementById("mybtn");
-btn.addEventListener('click',mute);
-
-function mute() {
-    document.getElementById("myaudio1").muted=!document.getElementById("myaudio1").muted ;
-}
-
-function autoplay(){
-aud.autoplay = true;
-aud.loop=true ;
-aud.load();
-}
-*/
 
 var sound1 = new Sound("myaudio1","audio/Kalimba.mp3");
 sound1.setsource();
