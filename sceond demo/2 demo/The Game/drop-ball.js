@@ -109,6 +109,7 @@ character.prototype.dropheart=function()
     
 }
     
+<<<<<<< HEAD
 var ball2=new character("Bal.ico");
 /*ball2.createball();
 setInterval(function(){ball2.dropball()},300); 
@@ -144,3 +145,13 @@ var k=setInterval(all,3000);
 heart.createheart();
 setInterval(heart.dropheart,100);
 */
+=======
+    
+var ball2=new character("Bal.ico");
+ball2.createball();
+setInterval(ball2.dropball,30); 
+
+var heart=new character("prize.jpg");
+heart.createheart();
+setInterval(heart.dropheart,100);
+>>>>>>> Aziz-1
