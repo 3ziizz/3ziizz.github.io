@@ -1,4 +1,4 @@
-var score=0;
+score=0;
 var input1= document.body;
 var get_Hscore=document.getElementById("score");
 input1.addEventListener("click",countscore)
@@ -83,22 +83,6 @@ function collision_heart()
 }
 setInterval(collision_ball,1);
 setInterval(collision_heart,1);
-
-console.log("score"+score)
-console.log("count"+count_lives)
-if(score==6 && count_lives==0)
-{
-var gold =document.getElementById('Gold');
-gold.style.display='inline'
-}
-/*if(score==10 && count_lives==1)
-{
-
-}
-if(score==10 && count_lives==2)
-{
-
-}*/
 
      
 

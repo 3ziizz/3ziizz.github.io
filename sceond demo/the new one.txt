@@ -1,0 +1,52 @@
+var count=1
+function ready_go(num)
+{  
+    var images = document.getElementsByTagName('img');
+
+    if(num==1)
+    {
+      images[0].src="img/red.png"
+      images[1].src="img/gray.png"
+      images[2].src="img/gray.png"
+        }
+    else if(num==2)
+    {
+      images[0].src="img/gray.png"
+      images[1].src="img/orange.png"
+      images[2].src="img/gray.png"
+      
+      
+    }
+    else
+    {
+    	  images[2].src="img/green.png"
+          var count=1
+function ready_go(num)
+{  
+
+    var images  = document.getElementsByTagName('img');
+
+    if(num==1)
+    {
+      images[0].src="img/red.png"
+      images[1].src="img/gray.png"
+      images[2].src="img/gray.png"
+    
+      
+
+    }
+    else if(num==2)
+    {
+      images[1].src="img/orange.png"
+      images[0].src="img/gray.png"
+      images[2].src="img/gray.png"
+      
+      
+    }
+    else
+    {
+    	  images[2].src="img/green.png"
+        images[0].src="img/gray.png"
+      images[1].src="img/gray.png"
+    }
+    setInterval(ready_go,3000)
