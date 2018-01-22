@@ -10,7 +10,12 @@ function collision_ball()
       && (dropped_ball[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_ball[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
         {
                 document.body.removeChild(dropped_ball[i]);
-                countscore();
+                 countscore();
+                var push1 = new push("crash","audio/Button_Push.mp3");
+                 push1.setsource();
+                 push1.play();
+
+
             }
      if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
       && ((dropped_ball[i].getBoundingClientRect().right>collector.getBoundingClientRect().right)||((dropped_ball[i].getBoundingClientRect().left<collector.getBoundingClientRect().left)))) 
@@ -38,3 +43,22 @@ function collision_heart()
 }
 setInterval(collision_ball,1);
 setInterval(collision_heart,1);
+
+
+
+function push (id, src) {
+    this.id = id;
+    this.src = src;
+    this.setsource=function(){
+document.getElementById(this.id).src = this.src;
+
+
+};
+  this.mute=function() {document.getElementById(this.id).muted=!document.getElementById(this.id).muted ;};
+this.play=function(){
+
+document.getElementById(this.id).autoplay = true;
+document.getElementById(this.id).load();
+};
+    
+}
