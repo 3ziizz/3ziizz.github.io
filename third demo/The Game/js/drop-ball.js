@@ -1,3 +1,5 @@
+import {source} from '../../js/page3.js' 
+
 
 function randomIntFromInterval(min,max)
 {
@@ -62,8 +64,11 @@ character.prototype.dropheart=function()
 
 
 
-var down =new character("img/Bal.ico");
-function cteate(){new character("img/Bal.ico")};
+
+
+
+var down =new character(source);
+function cteate(){new character(source)};
     setInterval(cteate,create_rate);
     xx=setInterval(down.dropball,drop_rate); 
     
@@ -73,6 +78,9 @@ function cteate(){new character("img/Bal.ico")};
         setInterval(down.dropball,drop_rate/4);
     }
     setTimeout(level,6000); 
+}
+
+
 
 var heart=new character("img/prize.jpg");
 function cheate(){new character("img/prize.jpg")};

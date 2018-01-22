@@ -26,3 +26,31 @@ sound1.autoplay();
 var btn=document.getElementById("mybtn");
 btn.addEventListener('click',function(){sound1.mute()});
 
+function char1(){
+source="The Game/img/bal.ico";
+}
+
+function char2(){
+source="basket";
+}
+
+function char3(){
+source="rabbit";
+}
+
+
+
+
+var btn1=document.getElementById("1");
+btn1.addEventListener('click',char1);
+
+var btn2=document.getElementById("2");
+btn2.addEventListener('click',char2);
+
+var btn3=document.getElementById("3");
+btn3.addEventListener('click',char3);
+
+
+
+export {source};
+
