@@ -109,6 +109,43 @@ character.prototype.dropheart=function()
     
 }
     
+<<<<<<< HEAD
+var ball2=new character("Bal.ico");
+/*ball2.createball();
+setInterval(function(){ball2.dropball()},300); 
+*/
+
+/*
+ball2.createball();
+for(var i=0;i<100;i++){    
+
+//setTimeout(ball2.dropball,1000);
+setInterval(function(){ball2.dropball()},300);
+}
+*/
+
+
+function all()
+{   
+    ball2.createball();
+    // g=setInterval(function(){ball2.dropball()},60);  
+     //clearInterval(k);
+     ball2.dropball();
+}
+var g;
+var k;
+//clearInterval(g);
+var k=setInterval(all,3000);
+
+
+
+//setInterval(all,500);
+
+/*var heart=new character("prize.jpg");
+heart.createheart();
+setInterval(heart.dropheart,100);
+*/
+=======
     
 var ball2=new character("Bal.ico");
 ball2.createball();
@@ -117,3 +154,4 @@ setInterval(ball2.dropball,30);
 var heart=new character("prize.jpg");
 heart.createheart();
 setInterval(heart.dropheart,100);
+>>>>>>> Aziz-1

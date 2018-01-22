@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<link rel="stylesheet"  href="css/page3.css" />
 </head>
 
 <body>
@@ -13,8 +13,14 @@
 <br>
 <br>
 
-<div align="center">
-<audio controls src="audio/sleep.mp3">
+ <div id="volume-btn">
+            <button type="button" style=" background-color: Transparent;border:none" id="mybtn" >
+                    <img src="img/volume.png" width="40px" height="40px"/>
+            </button>
+ </div>
+
+<div align="center" style="display:none">
+<audio controls src="audio/sleep.mp3" id="myaudio1">
   
 </div>
 
@@ -58,7 +64,7 @@
 <button style="margin:20px" type="reset"   form="form1" value="Reset">Reset</button>
 </form>
 
-//<script src="page3.js"></script>
+<script src="js/page3.js"></script>
 </body>
 
 </html>
