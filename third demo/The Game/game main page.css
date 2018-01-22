@@ -17,6 +17,15 @@
 
     
 }
+
+#gold
+{
+	position: relative;
+    left:45%;
+    top:0%;
+	width:20;
+	height:30;
+}
 #currscore
 { 
     position: absolute;

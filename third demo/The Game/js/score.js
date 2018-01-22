@@ -56,6 +56,8 @@ function collision_ball()
         {
                 document.body.removeChild(dropped_ball[i]);
                 countscore();
+			    bagdes();
+			   
             }
      if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
       && ((dropped_ball[i].getBoundingClientRect().right>collector.getBoundingClientRect().right)||((dropped_ball[i].getBoundingClientRect().left<collector.getBoundingClientRect().left)))) 
@@ -83,6 +85,25 @@ function collision_heart()
 }
 setInterval(collision_ball,1);
 setInterval(collision_heart,1);
+
+function badges()
+{
+if(score==6 && count_lives==0)
+{
+var gold =document.getElementById('Gold');
+gold.style.display='inline'
+} 
+}
+/*if(score==10 && count_lives==1)
+{
+
+}
+if(score==10 && count_lives==2)
+{
+
+}*/
+
+
 
      
 
