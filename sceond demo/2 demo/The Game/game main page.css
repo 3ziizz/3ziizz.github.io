@@ -35,17 +35,7 @@
 
     
 }
-#Gold
-{
-    position: relative;
-    display: none;
-    left:0%;
-    top:0%;
-    width:15%;
-    height:15%;
 
-    
-}
 #first-heart
 {   
     mix-blend-mode: multiply;
