@@ -1,4 +1,4 @@
-import {source} from '../../js/page3.js' 
+import {source} from '../../js/page3.js' ; 
 
 
 function randomIntFromInterval(min,max)
