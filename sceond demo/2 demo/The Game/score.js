@@ -55,8 +55,12 @@ function collision_ball()
       && (dropped_ball[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_ball[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
         {
                 document.body.removeChild(dropped_ball[i]);
-                countscore();
+                countscore(); 
+			    badges();
+			
             }
+		
+		
      if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
       && ((dropped_ball[i].getBoundingClientRect().right>collector.getBoundingClientRect().right)||((dropped_ball[i].getBoundingClientRect().left<collector.getBoundingClientRect().left)))) 
         {
@@ -86,6 +90,8 @@ setInterval(collision_heart,1);
 
 console.log("score"+score)
 console.log("count"+count_lives)
+
+function badges()
 if(score==6 && count_lives==0)
 {
 var gold =document.getElementById('Gold');
