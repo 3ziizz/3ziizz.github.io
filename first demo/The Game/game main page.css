@@ -1,7 +1,6 @@
 #main
 {   
-    background-image: url("grass.jpg");
-    background-size: 700px 700px;
+    background-color: white;
     margin: auto;
     width: 60%;
     height:100%;
@@ -15,6 +14,15 @@
     left:45%;
     top:0%;
     color: rgb(56, 5, 197)
+
+    
+}
+#currscore
+{ 
+    position: absolute;
+    left:45%;
+    top:7%;
+    color: rgb(166, 255, 0)
 
     
 }
@@ -88,4 +96,22 @@ height: 12%;
     width:240px;
     height:130px;
 }
-
+/*#circle {
+    width: 70px;
+    height: 70px;
+    background: #7fee1d;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    position: absolute;
+    top:10%;
+    right:45%;
+}*/
+.balls
+{
+    position: absolute;
+    top:2%; 
+    right:1030px;
+    width:4.5%;
+    height:5%;    
+}
