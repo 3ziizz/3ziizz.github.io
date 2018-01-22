@@ -1,10 +1,11 @@
 score=0;
-var input1= document.body;
+drop_rate=1000;
+create_rate=5000;
 var get_Hscore=document.getElementById("score");
-//input1.addEventListener("click",countscore)
 var updatescore=document.getElementById("currscore")
-var lev=0;
+lev=0;
 var updatelevel=document.getElementById("level")
+
 if(localStorage.getItem("highest-score")!=null)
 {
     get_Hscore.textContent="Highest Score :"+localStorage.getItem("highest-score");
@@ -12,6 +13,7 @@ if(localStorage.getItem("highest-score")!=null)
 {
     localStorage.setItem("highest-score",score);
 }
+
 function countscore(e){
     score+=1;
     updatescore.textContent="Score:"+score;
@@ -27,6 +29,14 @@ function countscore(e){
         lev+=1;
         updatelevel.textContent="Level:"+lev;
     }  
+   /* if(score>=5)
+    {
+        //drop_rate=drop_rate/2;
+        //create_rate=1000;
+        drop_rate=100;
+
+    }*/
+    //console.log(drop_rate);
 }
 //input2.addEventListener("keydown",removeheart_fun)
 var removeheart=[3];
@@ -43,46 +53,7 @@ function removeheart_fun(e){
         score=0;
     }
 }
-function collision_ball()
-{
-    var dropped_ball=document.getElementsByClassName("balls");
-    var collector=document.getElementById("box");
-    for (var i=0;i<dropped_ball.length;i++)
-    {
 
-        
-        if( (dropped_ball[i].getBoundingClientRect().top >= collector.getBoundingClientRect().top )
-      && (dropped_ball[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_ball[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
-        {
-                document.body.removeChild(dropped_ball[i]);
-                countscore();
-            }
-     if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
-      && ((dropped_ball[i].getBoundingClientRect().right>collector.getBoundingClientRect().right)||((dropped_ball[i].getBoundingClientRect().left<collector.getBoundingClientRect().left)))) 
-        {
-                document.body.removeChild(dropped_ball[i]);
-                removeheart_fun();
-            }
-
-    }
-}
-function collision_heart()
-{
-    var dropped_heart=document.getElementsByClassName("hearts");
-    var collector=document.getElementById("box");
-    for (var i=0;i<dropped_heart.length;i++)
-    {      
-        if( (dropped_heart[i].getBoundingClientRect().top >= collector.getBoundingClientRect().top )
-      && (dropped_heart[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_heart[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
-        {
-                document.body.removeChild(dropped_heart[i]);
-                score+=4;
-                countscore();
-            }
-    }
-}
-setInterval(collision_ball,1);
-setInterval(collision_heart,1);
 
      
 

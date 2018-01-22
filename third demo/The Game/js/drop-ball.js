@@ -1,3 +1,4 @@
+
 function randomIntFromInterval(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -11,11 +12,16 @@ var character=function(source)
     src1.value = this.source;
     ball.setAttributeNode(src1);
     var pos1 = document.createAttribute("class");
-    pos1.value="balls";
+        if(source=="img/Bal.ico"){
+        pos1.value="balls";
+        }else{
+            pos1.value="hearts";
+        }
     ball.setAttributeNode(pos1);
-    ball.style.right=randomIntFromInterval(280,1030)+"px";
-    console.log(typeof(ball));
+    ball.style.right=randomIntFromInterval(350,1000)+"px";
+    //console.log(typeof(ball));
     document.body.appendChild(ball);
+   
 
 }
 character.prototype.dropball=function()
@@ -36,29 +42,6 @@ character.prototype.dropball=function()
     }
     
 }
-
-var down =new character("img/Bal.ico");
-function cteate(){new character("img/Bal.ico")};
-setInterval(cteate,2000);
-setInterval(down.dropball,200);
-
-
-
-
-character.prototype.createheart=function()
-{
-    heart1 = document.createElement("img");
-    var src1 = document.createAttribute("src");
-    src1.value = this.source;
-    heart1.setAttributeNode(src1);
-    var pos1 = document.createAttribute("class");
-    pos1.value="hearts";
-    heart1.setAttributeNode(pos1);
-    heart1.style.right=randomIntFromInterval(280,1030)+"px";
-    document.body.appendChild(heart1);
-    this.dropheart();
-    
-}
 character.prototype.dropheart=function()
 {   
     var heart_arr=document.getElementsByClassName("hearts");
@@ -76,8 +59,22 @@ character.prototype.dropheart=function()
     }
     
 }
+
+
+
+var down =new character("img/Bal.ico");
+function cteate(){new character("img/Bal.ico")};
+    setInterval(cteate,create_rate);
+    xx=setInterval(down.dropball,drop_rate); 
     
+    function level()
+    {   
+        clearInterval(xx);
+        setInterval(down.dropball,drop_rate/4);
+    }
+    setTimeout(level,6000); 
 
 var heart=new character("img/prize.jpg");
-heart.createheart();
-setInterval(heart.dropheart,100);
+function cheate(){new character("img/prize.jpg")};
+setInterval(cheate,15000);
+setInterval(heart.dropheart,300);
