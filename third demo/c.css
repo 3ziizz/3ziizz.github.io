@@ -61,3 +61,10 @@ body  {
     background-color: #0000FF;
     color: white;
 }
+
+#volume-btn
+{
+    position: absolute;
+    left:74%;
+    top:4%;
+}
