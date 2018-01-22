@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import {source} from '../../js/page3.js' 
 
 
-=======
-drop_rate=200;
-create_rate=2500;
->>>>>>> master
 function randomIntFromInterval(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -26,6 +21,7 @@ var character=function(source)
         }
     ball.setAttributeNode(pos1);
     ball.style.right=randomIntFromInterval(350,1000)+"px";
+    //console.log(typeof(ball));
     document.body.appendChild(ball);
    
 
@@ -68,7 +64,6 @@ character.prototype.dropheart=function()
 
 
 
-<<<<<<< HEAD
 
 
 
@@ -76,41 +71,16 @@ var down =new character(source);
 function cteate(){new character(source)};
     setInterval(cteate,create_rate);
     xx=setInterval(down.dropball,drop_rate); 
-=======
-    var down =new character("img/Bal.ico");
-    function cteate(){new character("img/Bal.ico")};
-    lev1_create=setInterval(cteate,create_rate);
-    lev1_interval=setInterval(down.dropball,drop_rate); 
->>>>>>> master
     
-    function level_2()
+    function level()
     {   
-        clearInterval(lev1_interval);
-        clearInterval(lev1_create);
-        lev2_interval=setInterval(down.dropball,drop_rate/2);
-        lev2_create=setInterval(cteate,create_rate/2);
-        lev+=1;
-        updatelevel.textContent="Level:"+lev;
-    }
-    setTimeout(level_2,20000); 
-
-    function level_3()
-    {   
-        clearInterval(lev2_interval);
-        clearInterval(lev2_create);
+        clearInterval(xx);
         setInterval(down.dropball,drop_rate/4);
-        setInterval(cteate,create_rate/3);
-        lev+=1;
-        updatelevel.textContent="Level:"+lev;
     }
-<<<<<<< HEAD
     setTimeout(level,6000); 
 }
 
 
-=======
-    setTimeout(level_3,40000); 
->>>>>>> master
 
 var heart=new character("img/prize.jpg");
 function cheate(){new character("img/prize.jpg")};
