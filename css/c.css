@@ -3,7 +3,7 @@
 	background-image: url("../img/giphy.gif");
 	margin: auto;
     width: 60%;
-	height:100%;
+	height:90%;
 	background-repeat: no-repeat;
 	background-position:50% 50%;
 	/*background-color: rgb(247, 176, 44)*/
@@ -31,7 +31,7 @@
 .button1 {
     
 	position:absolute;
-	top:20%
+	top:15%
 	
 }
 
@@ -44,7 +44,7 @@
 .button2 {
     
 	position:absolute;
-	top:40%
+	top:35%
 	
 	
 }
@@ -57,7 +57,7 @@
 
 .button4 {
 	position:absolute;
-	top:60%
+	top:55%
 	
 
 }
@@ -71,7 +71,7 @@ color: white;
 
 .button3 {
 		position:absolute;
-		top:80%
+		top:75%
 		
    
 }
