@@ -20,7 +20,10 @@
 
 <div align="center" style="display:none">
 <audio controls src="audio/sleep.mp3" id="myaudio1">
-  
+</div>
+
+<div align="center" style="display:none">
+<audio controls src="audio/Button_Push.mp3" id="crash">
 </div>
 
          <div id="volume-btn">
@@ -29,15 +32,23 @@
             </button>
         </div>
         <img id="box" src="img/goal1.jpg"/>
-        <!MARQUEE DIRECTION=down height=100% loop=1 hspace=50%> <!img id="ball" src="bal.ico"/></MARQUEE>
+    
         
 
     </div>
-    <div id="circle"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>you got a golden medal</p>
+    </div>
+      
+    </div>
     <script src="js/move-box.js"></script>
     <script src="js/score.js"></script>
 	 <script src="js/collision detection.js"></script>
     <script src="js/drop-ball.js"></script>
+    <script src="js/modal.js"></script>
+
 </body>
 
 </html>

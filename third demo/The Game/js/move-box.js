@@ -28,22 +28,33 @@ if(e.keyCode==39)
 }
 
 
-var aud = document.getElementById("myaudio1");
+function Sound (id, src) {
+    this.id = id;
+    this.src = src;
+    this.setsource=function(){
+document.getElementById(this.id).src = this.src;
+
+
+};
+  this.mute=function() {document.getElementById(this.id).muted=!document.getElementById(this.id).muted ;};
+this.autoplay=function(){
+
+document.getElementById(this.id).autoplay = true;
+document.getElementById(this.id).loop=true ;
+document.getElementById(this.id).load();
+};
+    
+}
+
+
+
+var sound1 = new Sound("myaudio1","audio/sleep.mp3");
+sound1.setsource();
+sound1.autoplay();
+
 
 var btn=document.getElementById("mybtn");
-btn.addEventListener('click',mute);
-
-function mute() {
-    document.getElementById("myaudio1").muted=!document.getElementById("myaudio1").muted ;
-}
-
-function autoplay(){
-aud.autoplay = true;
-aud.loop=true ;
-aud.load();
-}
-
-autoplay();
+btn.addEventListener('click',function(){sound1.mute()});
 
 document.addEventListener("keyup",Gostart);
 function Gostart(e)
