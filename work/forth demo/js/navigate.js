@@ -20,7 +20,7 @@ function game()
     main_game.style.display="initial"
     option_page.style.display="none"
     exit_page.style.display="none"
-    instruction_page.style="none"
+    instruction_page.style.display="none"
 
     //script1 = document.createElement("script");
     var script1_src = document.createAttribute("src");
@@ -37,7 +37,7 @@ function options()
     main_game.style.display="none"
     option_page.style.display="initial"
     exit_page.style.display="none"
-    instruction_page.style="none"
+    instruction_page.style.display="none"
 
 
 }
@@ -48,7 +48,7 @@ function out()
     main_game.style.display="none"
     option_page.style.display="none"
     exit_page.style.display="initial"
-    instruction_page.style="none"
+    instruction_page.style.display="none"
 }
 function instruct()
 {
@@ -56,6 +56,6 @@ function instruct()
     main_game.style.display="none"
     option_page.style.display="none"
     exit_page.style.display="none"
-    instruction_page.style="initial"
+    instruction_page.style.display="initial"
     
 }
