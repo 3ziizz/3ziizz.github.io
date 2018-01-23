@@ -8,11 +8,13 @@
 </head>
 <body  align = "center" >
     <!start page>
-    <div id="start" style="display:initial" name="main_page">
-        <div width=50% height=100% align=center>
+    <div id="start" style="display:initial" name="main_page" >
+        <div id="start1" width=50% height=100% align=center>
     
             <button class="button button1" >START</button><br>
             <button class="button button2"  >OPTIONS</button><br>
+            <button class="button button4"  >INSTRUCTION</button><br>
+            <button class="button button5"  >CREDITS</button><br>
             <button class="button button3">EXIT</button>
         </div>
             
@@ -33,9 +35,9 @@
                     <h2 id="currscore">Score:</h2>
                     <h2 id="level">Level :</h2>
                     <h2 id="badge">Badge :</h2>
-                    <img id="first-heart" src="img/live.jpg"/>
-                    <img id="second-heart" src="img/live.jpg"/>
-                    <img id="third-heart" src="img/live.jpg"/>
+                    <img id="first-heart" src="img/live.png"/>
+                    <img id="second-heart" src="img/live.png"/>
+                    <img id="third-heart" src="img/live.png"/>
             
             
                      <div align="center" style="display:none">
@@ -73,10 +75,11 @@
     </div>
     <!/*option page*/>
      <div id="option" style="display:none">
-            <h1 align="center" >The Game Options</h1>
+            
             <br>
             <br>
             <br>
+            <h1 align="center" id="label" >The Game Options</h1>
             <br>
             <br>
             <br>
@@ -97,18 +100,14 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             
             <form action="form_read.txt" method="get" align="center" id="form1" target="_blank">
             <div id="radio-button-wrapper" >
+                    <h2 id="character">Choose Your Character</h2>
+                    <br>
             
                 <span class="image-radio">
-                    <input  type="radio"   name="charc" value="Goal" id="football"> <img src="img/Bal.ico"  height="56" width="56">
+                    <input  type="radio"   name="charc" value="Goal" id="football"> <img src="img/bal.png"  height="56" width="56">
                 </span>
                 <span class="image-radio">
                     <input  type="radio"  name="charc" value="basket" id="basketball"> <img src="img/basketball.png" height="50" width="50">
@@ -128,7 +127,7 @@
             <br>
             <br>
             
-            <button style="margin:20px" type="submit" form="form1" value="Submit">Save</button>
+            <button style="margin:20px" type="submit" form="form1" value="Submit">Save Your Choice</button>
             
             <button style="margin:20px" type="reset"   form="form1" value="Reset">Reset</button>
             </form>
