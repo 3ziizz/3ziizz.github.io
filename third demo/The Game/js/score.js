@@ -46,7 +46,7 @@ function removeheart_fun(e){
         {
                 document.body.removeChild(dropped_ball[i]);
                 countscore();
-			    bagdes();
+			    //bagdes();
 			   
             }
      if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
@@ -77,14 +77,14 @@ setInterval(collision_ball,1);
 setInterval(collision_heart,1);
 
 
-function badges()
+/*function badges()
 {
 if(score==6 && count_lives==0)
 {
 var gold =document.getElementById('Gold');
 gold.style.display='inline'
 } 
-}
+}*/
 /*if(score==10 && count_lives==1)
 {
 
