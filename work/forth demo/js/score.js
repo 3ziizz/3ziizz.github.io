@@ -23,7 +23,10 @@ function countscore(e)
         localStorage.setItem("highest-score",score);
         get_Hscore.textContent="Highest Score :"+localStorage.getItem("highest-score");
     }
-    
+    if (score == 10 || score == 20 ||score == 30){
+        lev+=1;
+        updatelevel.textContent="Level:"+lev;
+    }  
 
 }
 
