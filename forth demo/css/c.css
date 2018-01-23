@@ -31,7 +31,7 @@
 .button1 {
     
 	position:absolute;
-	top:15%
+	top:20%
 	
 }
 
@@ -44,7 +44,7 @@
 .button2 {
     
 	position:absolute;
-	top:30%
+	top:40%
 	
 	
 }
@@ -57,7 +57,7 @@
 
 .button4 {
 	position:absolute;
-	top:45%
+	top:60%
 	
 
 }
@@ -67,21 +67,11 @@ background-color: #0000FF;
 color: white;
 }
 
-.button5 {
-	position:absolute;
-	top:60%
-	
 
-}
-
-.button5:hover {
-background-color: #0000FF;
-color: white;
-}
 
 .button3 {
 		position:absolute;
-		top:75%
+		top:80%
 		
    
 }
