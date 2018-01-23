@@ -7,7 +7,7 @@ rabbit=document.getElementById("carrot");
 
 if(foot.checked)
 {   
-    character_choosed="img/Bal.ico"
+    character_choosed="img/bal.png"
     collector=new choose_collector("img/goal.png")
 
 }else if(basket1.checked)
@@ -21,7 +21,7 @@ if(foot.checked)
 }
 else
 {   
-    character_choosed="img/Bal.ico"
+    character_choosed="img/bal.png"
     collector=new choose_collector("img/goal.png")
 }
 function randomIntFromInterval(min,max)
