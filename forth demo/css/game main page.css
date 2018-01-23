@@ -21,7 +21,7 @@
 { 
     position: absolute;
     left:45%;
-    top:7%;
+    top:9%;
     color: rgb(166, 255, 0)
 
     
@@ -49,9 +49,9 @@
     mix-blend-mode: multiply;
     position: absolute;
     right:650px;
-    top:7%;
+    top:8%;
     width:2.5%;
-    height:2.5%;
+    height:3%;
 
 }
 #second-heart
@@ -59,9 +59,9 @@
     mix-blend-mode: multiply;
     position: absolute;
     right:685;
-    top:7%;
+    top:8%;
     width:2.5%;
-    height:2.5%;
+    height:3%;
 
 
 }
@@ -70,9 +70,9 @@
     mix-blend-mode: multiply;
     position: absolute;
     right:720;
-    top:7%;
+    top:8%;
     width:2.5%;
-    height:2.5%;
+    height:3%;
 }
 
 #volume-btn
@@ -113,15 +113,15 @@ height: 12%;
     top:-5%; 
     right:1030px;
     width:4.5%;
-    height:5%;    
+    height:7%;    
 }
 .hearts
 {
     position: absolute;
     top:2%; 
     right:1030px;
-    width:5%;
-    height:10%;    
+    width:3%;
+    height:7%;    
 }
 .modal {
    display: none; /* Hidden by default */

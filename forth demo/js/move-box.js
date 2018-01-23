@@ -35,23 +35,34 @@ document.documentElement.addEventListener("keydown",move);
 
 
 
+function Sound (id, src) {
+    this.id = id;
+    this.src = src;
+    this.setsource=function(){
+document.getElementById(this.id).src = this.src;
 
-var aud = document.getElementById("myaudio1");
+
+};
+  this.mute=function() {document.getElementById(this.id).muted=!document.getElementById(this.id).muted ;};
+this.autoplay=function(){
+
+document.getElementById(this.id).autoplay = true;
+document.getElementById(this.id).loop=true ;
+document.getElementById(this.id).load();
+};
+    
+}
+
+
+
+var sound1 = new Sound("myaudio1","audio/sleep.mp3");
+sound1.setsource();
+sound1.autoplay();
+
 
 var btn=document.getElementById("mybtn2");
-btn.addEventListener('click',mute);
 
-function mute() {
-    document.getElementById("myaudio1").muted=!document.getElementById("myaudio1").muted ;
-}
-
-function autoplay(){
-aud.autoplay = true;
-aud.loop=true ;
-aud.load();
-}
-
-autoplay();
+btn.addEventListener('click',function(){sound1.mute()});
 
 document.addEventListener("keyup",Gostart);
 function Gostart(e)
@@ -59,13 +70,11 @@ function Gostart(e)
 if (e.which==27)
 {
 //document.location.href = '../start_page.html' ;
-    console.log(script1);
-    head.style.display="initial"
-    main_game.style.display="none"
-    option_page.style.display="none"
-    exit_page.style.display="none"
-    document.body.removeChild(script1);
-    
+head.style.display="initial"
+main_game.style.display="none"
+option_page.style.display="none"
+exit_page.style.display="none"
+document.body.removeChild(script1);
 }
 
 }

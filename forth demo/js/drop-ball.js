@@ -8,20 +8,21 @@ rabbit=document.getElementById("carrot");
 if(foot.checked)
 {   
     character_choosed="img/Bal.ico"
-    collector=new choose_collector("img/goal.jpg")
+    collector=new choose_collector("img/goal.png")
 
 }else if(basket1.checked)
 {
     character_choosed="img/basketball.png"
-    collector=new choose_collector("img/box.jpg")
+    collector=new choose_collector("img/collector_2.png")
 }else if (rabbit.checked)
 {
-    character_choosed="img/rabbit.jpg"
+    character_choosed="img/carrot.png"
+    collector=new choose_collector("img/collector_3.png")
 }
 else
 {   
     character_choosed="img/Bal.ico"
-    collector=new choose_collector("img/goal.jpg")
+    collector=new choose_collector("img/goal.png")
 }
 function randomIntFromInterval(min,max)
 {
@@ -42,7 +43,7 @@ var character=function(source)
             pos1.value="hearts";
         }
     ball.setAttributeNode(pos1);
-    ball.style.right=randomIntFromInterval(350,1000)+"px";
+    ball.style.right=randomIntFromInterval(370,980)+"px";
     document.body.appendChild(ball);
    
 
@@ -111,7 +112,7 @@ character.prototype.dropheart=function()
     }
     setTimeout(level_3,40000); 
 
-var heart=new character("img/prize.jpg");
-function cheate(){new character("img/prize.jpg")};
+var heart=new character("img/prize.png");
+function cheate(){new character("img/prize.png")};
 setInterval(cheate,15000);
 setInterval(heart.dropheart,300);
