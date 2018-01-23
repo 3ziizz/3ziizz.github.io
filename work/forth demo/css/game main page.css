@@ -208,3 +208,18 @@ height: 12%;
     size:20;
     color:red;
 }
+.game_instruction
+{
+    /*margin-top: 10em;
+    margin-bottom: 1em;
+    /*margin-left: 0;*/
+    /*margin-right:0;*/
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    color:rgb(67, 4, 150);
+    background-color: rgb(218, 253, 226);
+   
+    
+    
+}
