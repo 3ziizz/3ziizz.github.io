@@ -23,6 +23,16 @@ sound1.setsource();
 sound1.autoplay();
 
 
-var btn=document.getElementById("mybtn");
+var btn=document.getElementById("mybtn1");
 btn.addEventListener('click',function(){sound1.mute()});
 
+form=document.getElementById("form1");
+form.addEventListener('submit',valid);
+
+function valid(e)
+{
+    head.style.display="initial"
+    main_game.style.display="none"
+    option_page.style.display="none"
+    exit_page.style.display="none"
+}

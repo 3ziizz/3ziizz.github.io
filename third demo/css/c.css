@@ -1,0 +1,70 @@
+body  {
+	
+   background-image: url("../img/giphy.gif");
+ 
+}
+.button {
+	
+	    border : none;
+		color: white;
+		padding: 16px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 22px;
+		margin: 4px 1px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		cursor: pointer;
+		background-color: white; 
+		color: black; 
+		border: 3px solid #0000FF;
+		width: 250px;
+		left : 40%;
+}
+
+.button1 {
+    
+	position:absolute;
+	top:25%
+	
+}
+
+.button1:hover {
+    background-color: #0000FF;
+    color: white;
+	
+}
+
+.button2 {
+    
+	position:absolute;
+	top:45%
+	
+	
+}
+
+
+.button2:hover {
+    background-color: #0000FF;
+    color: white;
+}
+
+.button3 {
+		position:absolute;
+		top:65%
+		
+   
+}
+
+.button3:hover {
+    background-color: #0000FF;
+    color: white;
+}
+
+#volume-btn
+{
+    position: absolute;
+    left:74%;
+    top:4%;
+}

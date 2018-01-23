@@ -1,0 +1,146 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>final</title>
+    <link rel="stylesheet" type="text/css" href="css/c.css">
+    <link rel="stylesheet"  href="css/game main page.css" />
+    <link rel="stylesheet"  href="css/page3.css" />
+</head>
+<body  align = "center" >
+    <!start page>
+    <div id="start" style="display:initial" name="main_page">
+        <div width=50% height=100% align=center>
+    
+            <button class="button button1" >START</button><br>
+            <button class="button button2"  >OPTIONS</button><br>
+            <button class="button button3">EXIT</button>
+        </div>
+            
+        <div id="volume-btn">
+            <button type="button" style=" background-color: Transparent;border:none" id="mybtn1" >
+            <img src="img/volume.png" width="40px" height="40px"/>
+        </button>
+        </div>
+        <div align="center" style="display:none">
+            <audio controls src="audio/sleep.mp3" id="myaudio1">  
+        </div>
+    </div>
+
+    <!game page>
+    <div id="game" style="display:none">
+            <div id="main">
+                    <h2 id="score">Highest Score :</h2>
+                    <h2 id="currscore">Score:</h2>
+                    <h2 id="level">Level :</h2>
+                    <h2 id="badge">Badge :</h2>
+                    <img id="first-heart" src="img/live.jpg"/>
+                    <img id="second-heart" src="img/live.jpg"/>
+                    <img id="third-heart" src="img/live.jpg"/>
+            
+            
+            <div align="center" style="display:none">
+            <audio controls src="audio/sleep.mp3" id="myaudio1">
+              
+            </div>
+            
+                     <div id="volume-btn">
+                        <button type="button" style=" background-color: Transparent;border: none" id="mybtn2" >
+                                <img src="img/volume.png" width="40px" height="40px"/>
+                        </button>
+                    </div>
+                    <img id="box" src="img/goal1.jpg"/>
+                
+                    
+            
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>you got a golden medal</p>
+                </div>
+                </div>
+
+                <script src="js/move-box.js"></script>
+                <script src="js/score.js"></script>
+                <script src="js/collision detection.js"></script>
+                <!script src="js/drop-ball.js"><!/script>
+                <script src="js/modal.js"></script>
+                
+                
+    </div>
+    <!/*option page*/>
+     <div id="option" style="display:none">
+            <h1 align="center" >The Game Options</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+             <div id="volume-btn">
+                        <button type="button" style=" background-color: Transparent;border:none" id="mybtn" >
+                                <img src="img/volume.png" width="40px" height="40px"/>
+                        </button>
+             </div>
+            
+            <div align="center" style="display:none">
+            <audio controls src="audio/sleep.mp3" id="myaudio1">
+              
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <form action="form_read.txt" method="get" align="center" id="form1" target="_blank">
+            <div id="radio-button-wrapper" >
+            
+                <span class="image-radio">
+                    <input  type="radio"   name="charc" value="Goal" id="football"> <img src="img/football.png"  height="56" width="56">
+                </span>
+                <span class="image-radio">
+                    <input  type="radio"  name="charc" value="basket" id="basketball"> <img src="img/basketball.png" height="50" width="50">
+                    
+                </span>
+            
+                <span class="image-radio">
+                    <input  type="radio"  name="charc" value="rabbit" id="carrot"> <img src="img/rabbit.jpg" height="50" width="50">
+                    
+                </span>
+            </div>
+            
+            
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <button style="margin:20px" type="submit" form="form1" value="Submit">Save</button>
+            
+            <button style="margin:20px" type="reset"   form="form1" value="Reset">Reset</button>
+            </form>
+            <script src="js/page3.js"></script>
+            
+    
+
+     </div>
+     <!exit page>
+      <div id="exit" style="display: none">
+            <h1 align="center" >Are you sure you want to leave?</h1>
+            <button type="button"><a href="bye.html">Yes</a></button>
+            <button type="button"><a href="last.html">No</a></button>
+      </div>
+    <script src="js/navigate.js"></script>
+
+</body>
+</html>
