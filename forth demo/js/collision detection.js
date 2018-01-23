@@ -47,7 +47,7 @@ function collision_heart()
 
 setInterval(collision_heart,1);
 setInterval(collision_ball,1);
-setInterval(collision_heart,1);
+
 
 
 function push (id, src) {

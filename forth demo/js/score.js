@@ -38,7 +38,7 @@ function removeheart_fun(e){
     removeheart[count_lives].src="img/dieheart.png";
     count_lives+=1;
     if(count_lives>=3){
-        count_lives=0;
+        //count_lives=0;
         score=0;
     }
 }
