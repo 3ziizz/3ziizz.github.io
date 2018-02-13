@@ -5,19 +5,19 @@ function collision_ball()
     for (var i=0;i<dropped_ball.length;i++)
     {
 
-        
-        if( (dropped_ball[i].getBoundingClientRect().top >= collector.getBoundingClientRect().top )
+    if( (dropped_ball[i].getBoundingClientRect().top >= collector.getBoundingClientRect().top )
       && (dropped_ball[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_ball[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
         {
                 document.body.removeChild(dropped_ball[i]);
-                 countscore();
+                countscore();
+                
                 var push1 = new push("crash","audio/Button_Push.mp3");
-                 push1.setsource();
-                 push1.play();
+                push1.setsource();
+                push1.play();
 
 
             }
-     if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
+    if( (dropped_ball[i].getBoundingClientRect().top > collector.getBoundingClientRect().top )
       && ((dropped_ball[i].getBoundingClientRect().right>collector.getBoundingClientRect().right)||((dropped_ball[i].getBoundingClientRect().left<collector.getBoundingClientRect().left)))) 
         {
                 document.body.removeChild(dropped_ball[i]);
@@ -36,8 +36,8 @@ function collision_heart()
       && (dropped_heart[i].getBoundingClientRect().right<collector.getBoundingClientRect().right)&&((dropped_heart[i].getBoundingClientRect().left>collector.getBoundingClientRect().left))) 
         {
                var prize1 = new prize("crash","audio/Crowding.mp3");
-                 prize1.setsource();
-                 prize1.play();
+                prize1.setsource();
+                prize1.play();
                 document.body.removeChild(dropped_heart[i]);
                 score+=4;
                 countscore();

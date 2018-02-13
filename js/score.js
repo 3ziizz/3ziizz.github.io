@@ -23,14 +23,10 @@ function countscore(e)
         localStorage.setItem("highest-score",score);
         get_Hscore.textContent="Highest Score :"+localStorage.getItem("highest-score");
     }
-    if (score == 10 || score == 20 ||score == 30 ||score == 40 ||score == 50){
-        lev+=1;
-        updatelevel.textContent="Level:"+lev;
-    } 
-    if (score == 10 || score == 20 ||score == 30){
-        lev+=1;
-        updatelevel.textContent="Level:"+lev;
-    }
+    // if (score == 10 || score == 20 ||score == 30 ||score == 40 ||score == 50){
+    //     lev+=1;
+    //     updatelevel.textContent="Level:"+lev;
+    // } 
 }
 
 var removeheart=[3];
@@ -45,7 +41,8 @@ function removeheart_fun(e){
     count_lives+=1;
     if(count_lives>=3){
         //count_lives=0;
-        score=0;
+        score=-1;
+        countscore();
     }
 }
 
