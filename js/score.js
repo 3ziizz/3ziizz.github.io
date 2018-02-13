@@ -27,7 +27,10 @@ function countscore(e)
         lev+=1;
         updatelevel.textContent="Level:"+lev;
     } 
-
+    if (score == 10 || score == 20 ||score == 30){
+        lev+=1;
+        updatelevel.textContent="Level:"+lev;
+    }
 }
 
 var removeheart=[3];
